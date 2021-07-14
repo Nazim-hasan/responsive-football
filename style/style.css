@@ -121,6 +121,67 @@ body{
     height: 427px;
 }
 /* highlights ended */
+/* fixtures started */
+.title-section{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: rgb(224, 44, 109);
+    text-align: center;
+}
+.fixtures-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.matchs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.match{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 40px 0px #00000026;
+    transition: transform 2s;
+}
+.match:hover{
+    transform: scale(1.1);
+    z-index: 99;
+}
+.match h4{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px;
+}
+.team1{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+.team1 .flag img{
+    margin-right: 5px;
+}
+.fixture{
+    margin: 0px 20px;
+}
+.fixture p{
+    text-align: center;
+}
+.team2{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+.team2 .flag img{
+    margin-left: 5px;
+}
+/* fixtures ended */
 /* footer started */
 .footer-container{
     display: flex;
@@ -144,16 +205,16 @@ body{
     .full-width-container{
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
         
     }
     .half-width{
         margin-top: 60px;
     }
     .half-width h1{
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 50px;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 50px;
     }
     
     .container{
@@ -186,6 +247,33 @@ body{
         font-size: 30px;
         line-height: 40px;
     }
+    .matchs{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .match{
+        width:89%;
+        margin: 0px 20px;
+    }
+    .fixture{
+        margin: 0px -20px;
+    }
+    .team1{
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+    .team1 .flag img{
+        margin-right: 5px;
+    }
+    .team2{
+        margin-right: 0px;
+        padding-left: 0;
+    }
+    .team2 .flag img{
+        margin-left: 0px;
+    }
+
+
     .footer-container{
         margin-left: 0px;
         margin-right: 20px;
