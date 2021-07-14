@@ -259,12 +259,16 @@ body{
     .fixture{
         margin: 0px -20px;
     }
+    .fixture p{
+        margin: 28px -40px;
+    }
     .team1{
         margin-right: 0px;
         padding-left: 0px;
     }
     .team1 .flag img{
         margin-right: 5px;
+        padding-left: 5px;
     }
     .team2{
         margin-right: 0px;
@@ -272,6 +276,7 @@ body{
     }
     .team2 .flag img{
         margin-left: 0px;
+        padding-left: 5px;
     }
 
 
